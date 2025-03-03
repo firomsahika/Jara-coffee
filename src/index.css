@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+
+/* colors */
+.primary{
+  color: #007B0C;
+}
+.bg-primary{
+  background-color: #007B0C;
+}   
+.content{
+  color: #4D4D4D;
+
+}
+.heading{
+  color: #000000;
+}
+
+.monteserrat{
+  font-family: 'Montserrat', sans-serif;
+}
+.poppins{
+  font-family: 'Poppins', sans-serif;
+}
+.quality{
+  background-image: url('./assets/slider-1.webp'); 
+  background-size: cover; /* Make sure the image covers the full area */
+  background-position: center; 
+}
+
+.service{
+  background-image: url('./assets/slider-1.webp'); 
+  background-size: cover; /* Make sure the image covers the full area */
+  background-position: center; 
+}
+
+.aboutus{
+  background-image: url('./assets/farm3.avif'); 
+  background-size: cover; /* Make sure the image covers the full area */
+  background-position: center; 
+}
+
+.testimony-bg{
+  background-image: url('./assets/charvest.avif'); 
+  background-size: cover; /* Make sure the image covers the full area */
+  background-position: center; 
+}
+
+.hero-background {
+  position: relative;
+  background-image: url('./assets/cofee.avif'); /* Set the image path here */
+  background-size: cover; /* Make sure the image covers the full area */
+  background-position: center; 
+  height: 90vh;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.4s;
+
+}
+
+.hero-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
+  z-index: 1; /* Ensure it stays on top of the image but below text */
+}
+
+.hero-background .content-wrapper {
+  position: relative;
+  z-index: 10; /* Ensure content stays above the overlay */
+}
