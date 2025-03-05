@@ -50,8 +50,8 @@ const Navbar = () => {
               Contact Us
             </Link>
             <Link
-              to="/contact"
-              className=" text-green-500 px-4 py-2 rounded-sm"
+              to="/blog"
+              className={isActive("/blog")}
             >
               Blog
             </Link>
