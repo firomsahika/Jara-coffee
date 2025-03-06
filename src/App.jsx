@@ -8,6 +8,8 @@ import Contact from './pages/ContactUsPage/Contact';
 import Footer from "./components/Footer"
 import Service from './pages/Services/Service';
 import Blog from "./pages/Blog/Blog"
+import BlogDetail from './pages/Blog/components/BlogDetail';
+import Gallery from './pages/Media/Gallery';
 
 const App = () => {
   return (
@@ -22,6 +24,11 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Service />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
+          <Route path="/gallery" element={<Gallery />} />
+
+
+
 
           {/* <Route path="/contact" element={<Contact />} /> */}
 

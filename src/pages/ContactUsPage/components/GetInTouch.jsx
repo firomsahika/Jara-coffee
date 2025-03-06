@@ -1,12 +1,41 @@
 import React from "react";
 
+import { CiLocationOn } from "react-icons/ci";
+import { MdOutlineLocalPostOffice } from "react-icons/md";
+import { IoCallOutline } from "react-icons/io5";
+
 const GetInTouch = () => {
+  const contacts = [
+    {
+      icon: <CiLocationOn size={35}/>,
+      title: "Adress",
+      content:
+        "Gudumale Building, Rooms 101-105, Gerji-Salitemiret Road, Jakros Area, Addis Ababa, Ethiopia",
+    },
+    {
+      icon: <MdOutlineLocalPostOffice size={35}/>,
+      title: "P.O.BOX:",
+      content: "46686",
+    },
+    {
+      icon: <MdOutlineLocalPostOffice size={35}/>,
+      title: "Email:",
+      content: "sales@dayebensacoffee.com",
+    },
+    {
+      icon: <IoCallOutline size={35}/>,
+      title: "Call Us:",
+      content: "+251 116 675552",
+    },
+  ];
   return (
-    <div className="h-screen flex items-center justify-center monteserrat gap-32">
+    <div className="min-h-screen bg-white flex flex-col items-center justify-center monteserrat gap-32 py-10 lg:px-32">
       {/* Get in touch section */}
-      <form className="flex flex-col items-center justify-center gap-5 w-full max-w-2xl px-4">
+      <form className="flex flex-col items-center shadow-lg justify-center gap-5 w-full lg:p-10 rounded-2xl max-w-2xl px-4">
         <div className="pb-10 text-center">
-          <h1 className="text-3xl text-green-500 font-semibold">Get In Touch With Us</h1>
+          <h1 className="text-3xl text-green-500 font-semibold">
+            Get In Touch With Us
+          </h1>
         </div>
 
         {/* First Name and Last Name Inputs */}
@@ -65,29 +94,20 @@ const GetInTouch = () => {
             type="submit"
             className="w-full py-4 bg-green-500 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
-            Submit
+            Send a message
           </button>
         </div>
       </form>
 
       {/* Address section */}
-      <div className="content monteserrat flex flex-col gap-5">
-        <div className="flex flex-col items-center justify-center gap-2">
-            <h1 className="font-bold text-2xl">Address:</h1>
-            <p className="">Gudumale Building, Rooms 101-105,<br></br>Gerji-Salitemiret Road, Jakros Area,<br></br>Addis Ababa, Ethiopia</p>
-        </div>
-        <div className="flex flex-col items-center justify-center gap-2">
-            <h1 className="font-semibold text-xl">P.O.BOX:</h1>
-            <p>46686</p>
-        </div>
-        <div className="flex flex-col items-center justify-center gap-2">
-            <h1 className="font-semibold text-xl">Email:</h1>
-            <p>sales@dayebensacoffee.com</p>
-        </div>
-        <div className="flex flex-col items-center justify-center gap-2">
-            <h1 className="font-semibold text-xl">Phone:</h1>
-            <p>+251 116 675552</p>
-        </div>
+      <div className="grid grid-cols-1 md:grid-cos-2 lg:grid-cols-4 gap-10">
+        {contacts.map((contact, index) => (
+          <div key={index} className="flex flex-col gap-y-2 p-5 shadow-md bg-[#F8F8F8] border-2 border-gray-100"> 
+            <p className="text-green-500">{contact.icon}</p>
+            <p className="text-xl font-bold">{contact.title}</p>
+            <p className="max-w-sm">{contact.content}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

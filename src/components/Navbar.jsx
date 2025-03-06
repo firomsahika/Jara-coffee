@@ -103,8 +103,8 @@ const Navbar = () => {
                   Contact Us
                 </Link>
                 <Link
-                  to="/contact"
-                  className=" text-white px-4 py-2 rounded-sm"
+                  to="/blog"
+                  className={isActive("/blog")}
                 >
                   Blog
                 </Link>
@@ -168,11 +168,11 @@ const Navbar = () => {
                     Contact Us
                   </Link>
                   <Link
-                    to="/contact"
-                    className="bg-primary text-white px-4 py-2 rounded-sm"
-                  >
-                    Order Coffee
-                  </Link>
+                  to="/blog"
+                  className={isActive("/blog")}
+                >
+                  Blog
+                </Link>
                  
                 </li>
               </ul>
