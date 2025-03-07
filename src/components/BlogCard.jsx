@@ -19,7 +19,7 @@ const BlogCard = ({
 
   const blogData ={id, image, title, content, postDate, minToRead, views, comments, likes}
   return (
-    <div className="bg-white rounded-xl shadow-lg w-full poppins"> 
+    <div className="bg-white rounded-xl shadow-lg w-full cormorant"> 
       <div className="flex flex-col">
         {/* image section */}
         <Link to={`/blog/${id}`} 

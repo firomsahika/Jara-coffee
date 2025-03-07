@@ -19,7 +19,7 @@ const Testimonials = () => {
 
 
   return (
-    <div className='w-full bg-green-500 flex flex-col lg:h-[70vh] items-center justify-center p-10  gap-20  text-white poppins '
+    <div className='w-full bg-green-500 flex flex-col lg:h-[70vh] items-center justify-center p-10  gap-20  text-white cormorant '
     
     >
         <h1 className='font-bold text-3xl lg:text-4xl text-white'>Testimonials</h1>

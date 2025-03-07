@@ -21,7 +21,7 @@ const HeroSlider = () => {
 
   return (
     <div
-      className="relative items-center justify-center poppins overflow-x-hidden"
+      className="relative items-center justify-center cormorant overflow-x-hidden"
       style={{ backgroundColor: "rgba(0, 0, 0, 0.1)" }}
     >
       <Slider {...settings} 
@@ -34,8 +34,8 @@ const HeroSlider = () => {
             alt="farmer"
             className="w-full h-[60vh] md:h-[50vh]  lg:h-screen object-cover"
           />
-          <div className="absolute space-y-5 flex flex-col top-24 md:top-44 md:left-32 lg:top-54 lg:left-44 text-white font-sans bg-opacity-50 p-6 rounded-lg">
-            <h2 className="text-3xl md:text-3xl font-bold text-white poppins max-w-2xl flex flex-col">
+          <div className="absolute space-y-5 flex flex-col  top-24 md:top-44 md:left-32 lg:top-54 lg:left-44 text-white font-sans bg-opacity-50 p-6 rounded-lg">
+            <h2 className="text-3xl md:text-3xl font-bold text-white cormorant max-w-2xl flex flex-col">
                 <span className=" text-2xl lg:text-6xl  md:text-4xl font-bold">Jara Coffee</span>
             <TypeAnimation
                 sequence={[
@@ -57,7 +57,7 @@ const HeroSlider = () => {
             </p>
             <a
               href="#discover-coffee"
-              className="bg-green-500  p-3 lg:p-4 text-xl md:text-2xl lg:text-2xl  lg:max-w-sm flex items-center justify-center"
+              className="bg-green-500 cormorant  p-3 lg:p-4 text-xl md:text-2xl lg:text-2xl  lg:max-w-sm flex items-center justify-center"
             >
               Discover Our Coffee
             </a>
@@ -73,7 +73,7 @@ const HeroSlider = () => {
             className="w-full h-[60vh] md:h-[50vh] lg:h-screen object-cover "
           />
           <div className="absolute space-y-5 flex flex-col  top-24 md:top-44 md:left-32 lg:top-54 lg:left-44 text-white font-sans  bg-opacity-50 p-6 rounded-lg">
-            <h2 className="text-2xl lg:text-6xl md:text-4xl lg:max-w-2xl md:max-w-4xl font-bold poppins flex flex-col">
+            <h2 className="text-2xl lg:text-6xl md:text-4xl lg:max-w-2xl md:max-w-4xl font-bold cormorant flex flex-col">
             <span className=" text-2xl lg:text-6xl md:text-4xl">Jara Coffee</span>
             <TypeAnimation
                 sequence={[
@@ -95,7 +95,7 @@ const HeroSlider = () => {
             </p>
             <a
               href="#discover-coffee"
-              className="bg-green-500  p-3 lg:p-4 text-xl md:text-2xl lg:text-2xl  lg:max-w-sm flex items-center justify-center"
+              className="bg-green-500 cormorant  p-3 lg:p-4 text-xl md:text-2xl lg:text-2xl  lg:max-w-sm flex items-center justify-center"
             >
               Discover Our Coffee
             </a>

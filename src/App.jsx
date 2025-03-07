@@ -10,6 +10,8 @@ import Service from './pages/Services/Service';
 import Blog from "./pages/Blog/Blog"
 import BlogDetail from './pages/Blog/components/BlogDetail';
 import Gallery from './pages/Media/Gallery';
+import Login from './pages/admin/auth/pages/Login';
+import BlogPost from './pages/admin/blog/pages/BlogPost';
 
 const App = () => {
   return (
@@ -26,6 +28,11 @@ const App = () => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/auth/adminLogin" element={<Login />} />
+          <Route path="/admin/blog-post" element={<BlogPost />} />
+
+
+
 
 
 

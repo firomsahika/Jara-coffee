@@ -16,7 +16,7 @@ const AboutShort = () => {
 
 
   return (
-    <div className="w-full min-h-screen lg:h-screen md:h-screen p-10 flex  gap-20 items-center justify-center poppins">
+    <div className="w-full min-h-screen lg:h-screen md:h-screen p-10 flex  gap-20 items-center justify-center cormorant">
       <div className="flex flex-col md:flex-row lg:flex-row items-center justify-center gap-4  md:gap-20 lg:gap-20 w-full h-full">
         <div className="flex flex-col gap-5 md:gap-14 lg:gap-20 items-center justify-center">
           <div className="flex flex-col items-center justify-center space-y-4 pt-1 md:pt-6 lg:pt-10">

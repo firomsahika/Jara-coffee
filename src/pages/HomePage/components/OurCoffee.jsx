@@ -4,7 +4,7 @@ import ourcoffee from "../../../assets/OurCoffee.webp";
 
 const OurCoffee = () => {
   return (
-    <div className="flex flex-col items-center justify-center px-10  lg:px-32 poppins py-8 md:py-5 lg:py-0">
+    <div className="flex flex-col items-center justify-center px-10  lg:px-32 cormorant py-8 md:py-5 lg:py-0">
       <div className="lg:pt-20 pt-6">
         <h1 className="font-bold text-3xl lg:text-4xl text-green-500">
           OUR COFFEES

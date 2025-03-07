@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { GiCoffeeBeans } from "react-icons/gi";
 
 import { Link, useLocation } from "react-router-dom";
 
@@ -13,55 +14,67 @@ const Navbar = () => {
   };
 
   const isActive = (path) => {
-    return location.pathname === path ? "border-b-3 border-black " : "";
+    return location.pathname === path ? "border-b-2 border-green-500 " : "";
   };
 
   return (
     <div
-      className="flex fixed z-10 shadow-2xl  bg-white opacity-96 items-center text-green-500 p-5 md:px-10 poppins h-20vh 
-     w-full  justify-between md:justify-center gap-20"
+      className="flex fixed z-10 shadow-md  bg-white  items-center text-green-500 p-4 md:px-10 cormorant h-20vh 
+     w-full justify-between md:justify-center gap-20"
     >
-      <div className="font-bold">Logo</div>
-      <div className="hidden md:hidden lg:block">
-        <ul className="flex items-center lg:space-x-20 md:space-x-8 font-semibold tracking-normal">
-          <li>
-            <Link to="/" className={isActive("/")}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/about" className={isActive("/about")}>
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to="/services" className={isActive("/services")}>
-              Services
-            </Link>
-          </li>
+      <div className="flex justify-between lg:gap-60 items-center">
+        {/* Left: Logo */}
+        <div className="font-bold">
+          <GiCoffeeBeans size={50} />
+        </div>
 
-          <li>
-            <Link to="/gallery" className={isActive("/gallery")}>
-              Gallery
-            </Link>
-          </li>
-          <li className="flex space-x-10 items-center">
-            <Link to="/contact" className={isActive("/contact")}>
-              Contact Us
-            </Link>
-            <Link
-              to="/blog"
-              className={isActive("/blog")}
-            >
-              Blog
-            </Link>
-            <li className="flex space-x-8">
-              <FaFacebook className="w-6 h-6" />
-              <FaInstagram className="w-6 h-6" />
-              <FaTwitter className="w-6 h-6" />
+        {/* Center: Navigation Links */}
+        <div className="hidden lg:block">
+          <ul className="flex items-center space-x-8 font-semibold tracking-normal">
+            <li>
+              <Link to="/" className={isActive("/")}>
+                Home
+              </Link>
             </li>
-          </li>
-        </ul>
+            <li>
+              <Link to="/about" className={isActive("/about")}>
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="/services" className={isActive("/services")}>
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link to="/gallery" className={isActive("/gallery")}>
+                Gallery
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className={isActive("/contact")}>
+                Contact Us
+              </Link>
+            </li>
+            <li>
+              <Link to="/blog" className={isActive("/blog")}>
+                Blog
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Right: Social Links */}
+        <div className="flex space-x-6 items-center bg-white p-3 shadow-lg rounded-2xl">
+          <FaFacebook className="w-6 h-6" />
+          <FaInstagram className="w-6 h-6" />
+          <FaTwitter className="w-6 h-6" />
+          <Link to="/auth/adminLogin">
+            <button className="p-2 cursor-pointer text-black font-bold">
+              Admin
+            </button>
+          </Link>
+        </div>
       </div>
 
       {/* mobile menu for navbar */}
@@ -102,10 +115,7 @@ const Navbar = () => {
                 <Link to="/contact" className={isActive("/contact")}>
                   Contact Us
                 </Link>
-                <Link
-                  to="/blog"
-                  className={isActive("/blog")}
-                >
+                <Link to="/blog" className={isActive("/blog")}>
                   Blog
                 </Link>
                 <li className="flex space-x-8 py-2">
@@ -122,7 +132,6 @@ const Navbar = () => {
       {/* Tablet size  */}
 
       <div className="w-full hidden lg:hidden md:flex md:items-center md:justify-between ">
-        
         <ul>
           <li className="flex space-x-8 py-2">
             <FaFacebook className="w-6 h-6" />
@@ -167,13 +176,9 @@ const Navbar = () => {
                   <Link to="/contact" className={isActive("/contact")}>
                     Contact Us
                   </Link>
-                  <Link
-                  to="/blog"
-                  className={isActive("/blog")}
-                >
-                  Blog
-                </Link>
-                 
+                  <Link to="/blog" className={isActive("/blog")}>
+                    Blog
+                  </Link>
                 </li>
               </ul>
             </div>

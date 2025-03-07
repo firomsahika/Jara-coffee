@@ -65,7 +65,7 @@ const ClientSection = () => {
   };
 
   return (
-    <div className="py-20 px-20  bg-gray-50 overflow-x-hidden">
+    <div className="py-20 px-20 cormorant  bg-gray-50 overflow-x-hidden">
       
       <div className="text-center mb-16">
         <h2 className="text-3xl font-bold text-green-500">OUR CLIENTS</h2>
