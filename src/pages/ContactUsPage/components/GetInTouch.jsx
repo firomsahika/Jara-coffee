@@ -29,7 +29,7 @@ const GetInTouch = () => {
     },
   ];
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center monteserrat gap-32 py-10 lg:px-32">
+    <div className="min-h-screen bg-white flex flex-col items-center justify-center cormorant gap-32 py-10 lg:px-32">
       {/* Get in touch section */}
       <form className="flex flex-col items-center shadow-lg justify-center gap-5 w-full lg:p-10 rounded-2xl max-w-2xl px-4">
         <div className="pb-10 text-center">

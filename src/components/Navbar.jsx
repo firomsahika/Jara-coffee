@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <div
-      className="flex fixed z-10 shadow-md  bg-white  items-center text-green-500 p-4 md:px-10 cormorant h-20vh 
+      className="flex  z-10 shadow-md  bg-white  items-center text-green-500 p-4 md:px-10 cormorant h-20vh 
      w-full justify-between md:justify-center gap-20"
     >
       <div className="flex justify-between lg:gap-60 items-center">
@@ -29,7 +29,7 @@ const Navbar = () => {
         </div>
 
         {/* Center: Navigation Links */}
-        <div className="hidden lg:block">
+        <div className="hidden lg:flex">
           <ul className="flex items-center space-x-8 font-semibold tracking-normal">
             <li>
               <Link to="/" className={isActive("/")}>
@@ -65,7 +65,7 @@ const Navbar = () => {
         </div>
 
         {/* Right: Social Links */}
-        <div className="flex space-x-6 items-center bg-white p-3 shadow-lg rounded-2xl">
+        <div className="hidden md:flex lg:flex  space-x-6 items-center bg-white p-3 shadow-lg rounded-2xl">
           <FaFacebook className="w-6 h-6" />
           <FaInstagram className="w-6 h-6" />
           <FaTwitter className="w-6 h-6" />
@@ -79,7 +79,7 @@ const Navbar = () => {
 
       {/* mobile menu for navbar */}
 
-      <div className="md:hidden flex items-center">
+      <div className="flex md:hidden lg:hidden items-center">
         <button onClick={handleToggle}>
           {toggle ? (
             <FaTimes className="w-6 h-6" />

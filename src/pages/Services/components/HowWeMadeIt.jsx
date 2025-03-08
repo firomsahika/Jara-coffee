@@ -39,7 +39,7 @@ const HowWeMadeIt = () => {
        
     ]
   return (
-    <div className='flex flex-col lg:flex-row items-center justify-center px-5 py-20 poppins gap-10'>
+    <div className='flex flex-col lg:flex-row items-center justify-center px-5 py-20 cormorant gap-10'>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5  '>
             {
                 processes.map((process,index) =>(

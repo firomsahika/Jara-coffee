@@ -60,7 +60,7 @@ const Process = () => {
     },
   ];
   return (
-    <div className="flex items-center justify-center bg-green-500  px-5 py-20 text-white poppins">
+    <div className="flex items-center justify-center bg-green-500  px-5 py-20 text-white cormorant">
       <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-14 lg:gap-16">
         {processes.map((process, index) => (
           <div

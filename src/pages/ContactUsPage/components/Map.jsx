@@ -8,7 +8,7 @@ const Map = () => {
   const position = [9.0348, 38.7616];
 
   return (
-   <div className="overflow-x-hidden">
+   <div className="overflow-x-hidden cormorant">
      <MapContainer
       center={position}
       zoom={14}

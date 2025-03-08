@@ -53,7 +53,7 @@ const TimelineVer = () => {
   ];
 
   return (
-    <div className="p-4 lg:p-6 ">
+    <div className="p-4 lg:p-6 cormorant">
       <h2 className="text-4xl text-center text-white font-bold mb-12">Our History</h2>
 
       {/* Timeline Wrapper */}

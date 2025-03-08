@@ -17,7 +17,7 @@ const Journey = () => {
 
 
   return (
-    <div className="flex flex-col lg:flex-row md:flex-row min-h-screen lg:max-h-screen items-center justify-center  poppins p-5 md:10 lg:px-20">
+    <div className="flex flex-col lg:flex-row md:flex-row min-h-screen lg:max-h-screen items-center justify-center  cormorant p-5 md:10 lg:px-20">
       {/* content section */}
       <div className="flex flex-col gap-y-8">
         <div className="flex flex-col gap-y-4">

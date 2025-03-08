@@ -37,7 +37,7 @@ const Mission = () => {
 
 
   return (
-    <div className="lg:px-40 py-10 md:py-28 lg:py-40 bg-gray-50 px-5 ">
+    <div className="lg:px-40 py-10 md:py-28 lg:py-40 bg-gray-50 px-5 cormorant">
         
       <div className="relative grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10">
         {

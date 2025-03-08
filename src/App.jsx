@@ -12,6 +12,9 @@ import BlogDetail from './pages/Blog/components/BlogDetail';
 import Gallery from './pages/Media/Gallery';
 import Login from './pages/admin/auth/pages/Login';
 import BlogPost from './pages/admin/blog/pages/BlogPost';
+import Chatbot from './pages/chatbot/chatbot';
+
+
 
 const App = () => {
   return (
@@ -44,7 +47,7 @@ const App = () => {
           <Route path="*" component={() => <h2>Page not found</h2>} />
         </Routes>
       </div>
-
+      <Chatbot />
       <Footer />
     </Router>
   );

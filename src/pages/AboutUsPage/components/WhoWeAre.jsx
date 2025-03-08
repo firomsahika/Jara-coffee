@@ -12,7 +12,7 @@ const WhoWeAre = () => {
     
 
   return (
-    <div className=' flex items-center justify-center px-5 lg:px-0'>
+    <div className=' flex items-center justify-center px-5 lg:px-0 cormorant'>
       <div className='flex flex-col md:flex-row lg:flex-row items-center justify-center py-20 gap-12 '>
         <div className='flex flex-col lg:gap-8'>
             <p className='flex gap-2 font-medium text-green-500 text-xl '>
