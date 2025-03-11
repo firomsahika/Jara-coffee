@@ -12,7 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 const HeroSlider = () => {
   const settings = {
     infinite: true,
-    speed: 500,
+    speed: 700,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
