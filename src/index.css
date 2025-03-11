@@ -39,7 +39,13 @@
 }
 
 .aboutus{
-  background-image: url('./assets/farm3.avif'); 
+  background-image: url('./assets/tarara.jpg'); 
+  background-size: cover; /* Make sure the image covers the full area */
+  background-position: center; 
+}
+
+.bg-footer{
+  background-image: url('./assets/roasted.jpg'); 
   background-size: cover; /* Make sure the image covers the full area */
   background-position: center; 
 }
@@ -57,7 +63,6 @@
   background-position: center; 
   height: 90vh;
   transition: background 0.3s, border-radius 0.3s, opacity 0.4s;
-
 }
 
 .hero-background::before {
@@ -75,3 +80,5 @@
   position: relative;
   z-index: 10; /* Ensure content stays above the overlay */
 }
+
+

@@ -1,8 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
 
-import coffee from "../../../assets/cofee.avif";
-import farmer from "../../../assets/farmer.avif";
+import coffee from "../../../assets/tarara.jpg";
+import farmer from "../../../assets/coffee-1200.jpg";
 
 import { TypeAnimation } from "react-type-animation";
 
@@ -24,11 +24,14 @@ const HeroSlider = () => {
       className="relative items-center justify-center cormorant overflow-x-hidden"
       style={{ backgroundColor: "rgba(0, 0, 0, 0.1)" }}
     >
+
       <Slider {...settings} 
       style={{ backgroundColor: "rgba(0, 0, 0, 0.1)" }}
       >
         {/* Slide 1 */}
         <div className="relative" style={{ backgroundColor: "rgba(0, 0, 0, 0.1)" }} >
+        <div className='absolute inset-0 bg-black opacity-10'></div>
+
           <img
             src={farmer}
             alt="farmer"
@@ -67,6 +70,7 @@ const HeroSlider = () => {
         {/* Slide 2 */}
 
         <div className="relative ">
+        <div className='absolute inset-0 bg-black opacity-60'></div>
           <img
             src={coffee}
             alt="Coffee Beans"

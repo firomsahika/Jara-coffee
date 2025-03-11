@@ -38,13 +38,13 @@ const Navbar = () => {
 
   return (
     <div
-      className={`flex fixed z-10 shadow-md bg-white items-center  text-green-500 p-4 md:px-10 cormorant h-20vh w-full justify-between md:justify-center gap-20 transition-all duration-300 ease-in-out ${
+      className={`flex fixed z-10 shadow-md bg-white items-center  text-gray-800 p-4 md:px-10 monteserrat w-full justify-between md:justify-center gap-20 transition-all duration-300 ease-in-out ${
         scrolled
-          ? "rounded-full shadow-3xl mt-4 my-4" // Apply margin when scrolled
-          : "h-20"
+          ? "h-20" // Apply margin when scrolled
+          : "h-26"
       }`}
     >
-      <div className="flex justify-between font-bold text-md lg:gap-60 items-center">
+      <div className="flex justify-between font-semibold text-md lg:gap-60 items-center">
         {/* Left: Logo */}
         <div className="font-bold">
           <GiCoffeeBeans size={50} />
@@ -55,32 +55,32 @@ const Navbar = () => {
           <ul className="flex items-center space-x-8 font-semibold tracking-normal">
             <li>
               <Link to="/" className={isActive("/")}>
-                Home
+                HOME
               </Link>
             </li>
             <li>
               <Link to="/about" className={isActive("/about")}>
-                About
+                ABOUT
               </Link>
             </li>
             <li>
               <Link to="/services" className={isActive("/services")}>
-                Services
+                SERVICES
               </Link>
             </li>
             <li>
               <Link to="/gallery" className={isActive("/gallery")}>
-                Gallery
+                GALLERY
               </Link>
             </li>
             <li>
               <Link to="/contact" className={isActive("/contact")}>
-                Contact Us
+                CONTACT US
               </Link>
             </li>
             <li>
               <Link to="/blog" className={isActive("/blog")}>
-                Blog
+                BLOG
               </Link>
             </li>
           </ul>
