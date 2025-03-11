@@ -19,18 +19,16 @@ const Navbar = () => {
 
   // Handle scroll event to change navbar style
   const handleScroll = () => {
-    if (window.scrollY > 50) {  // When user scrolls 50px down
+    if (window.scrollY > 50) {  
       setScrolled(true);
     } else {
       setScrolled(false);
     }
   };
 
-  // Use effect to listen for scroll events
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listener
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -38,13 +36,13 @@ const Navbar = () => {
 
   return (
     <div
-      className={`flex fixed z-10 shadow-md bg-white items-center  text-gray-800 p-4 md:px-10 monteserrat w-full justify-between md:justify-center gap-20 transition-all duration-300 ease-in-out ${
+      className={`flex fixed z-10 shadow-md bg-white items-center  text-green-500 p-4 md:px-10 monteserrat w-full justify-between md:justify-center gap-20 transition-all duration-300 ease-in-out ${
         scrolled
-          ? "h-20" // Apply margin when scrolled
+          ? "h-20" 
           : "h-26"
       }`}
     >
-      <div className="flex justify-between font-semibold text-md lg:gap-60 items-center">
+      <div className="flex justify-between  text-md lg:gap-60 items-center">
         {/* Left: Logo */}
         <div className="font-bold">
           <GiCoffeeBeans size={50} />
@@ -52,7 +50,7 @@ const Navbar = () => {
 
         {/* Center: Navigation Links */}
         <div className="hidden lg:flex">
-          <ul className="flex items-center space-x-8 font-semibold tracking-normal">
+          <ul className="flex items-center space-x-8  tracking-normal">
             <li>
               <Link to="/" className={isActive("/")}>
                 HOME
