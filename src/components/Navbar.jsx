@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { RiAdminLine } from "react-icons/ri";
 import { GiCoffeeBeans } from "react-icons/gi";
 import { Link, useLocation } from "react-router-dom";
 
@@ -90,8 +91,8 @@ const Navbar = () => {
           <FaInstagram className="w-6 h-6" />
           <FaTwitter className="w-6 h-6" />
           <Link to="/auth/adminLogin">
-            <button className="p-2 cursor-pointer text-black font-bold">
-              Admin
+            <button className="p-2 cursor-pointer font-bold">
+            <RiAdminLine size={30}/>
             </button>
           </Link>
         </div>
