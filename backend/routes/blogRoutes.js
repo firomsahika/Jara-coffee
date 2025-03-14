@@ -1,6 +1,6 @@
 import express from 'express';
-import createBlog from '../controllers/blogControllers';
-import jwtMiddleware from '../middleware/authMiddleware';
+import createBlog from '../controllers/blogControllers.js';
+import jwtMiddleware from '../middleware/authMiddleware.mjs';
 
 const router = express.Router();
 

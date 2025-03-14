@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-import Blog from "../models/Blog"
+import Blog from "../models/Blog.js"
 
 dotenv.config();
 
